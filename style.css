@@ -1,1 +1,293 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://googleapis.com/css2?family=clicker+Script&family=Poppins:wgh@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: Poppins "san serif";
+}
+
+:before, :after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.section {
+  background: #f2f2fc;
+  min-height: 100vh;
+  display: block;
+  padding: 0 30px;
+  opacity: 1;
+}
+
+.aside {
+  width: 270px;
+  background: #fdf9ff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-right: 1px solid #c8dfec;
+  padding: 30px;
+  z-index: 10;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aside .logo {
+  position: absolute;
+  top: 50px;
+  font-size: 30px;
+}
+
+.aside .logo a {
+  color: #302e4d;
+  font-weight: 700;
+  padding: 15px 20px;
+  font-size: 30px;
+  letter-spacing: 5px;
+  position: relative span;
+  position-font-family: "Clicker Script" cursive;
+  position-font-size: 40px;
+}
+
+.aside .logo a ::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-bottom: 5px solid #ec1839;
+  border-left: 5px solid #ec1839;
+  bottom: 0;
+  left: 0;
+}
+
+.aside .logo a ::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-top: 5px solid #ec1839;
+  border-right: 5px solid #ec1839;
+  top: 0;
+  right: 0;
+}
+
+.aside .nav-toggler {
+  height: 40px;
+  width: 45px;
+  border: 1px solid #c8dfec;
+  cursor: pointer;
+  position: fixed;
+  left: 300px;
+  top: 20px;
+  visibility: hidden;
+  border-radius: 5px;
+  background: #fdf9ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aside .nav-toggler span {
+  height: 2px;
+  width: 18px;
+  background-color: #ec1839;
+  display: inline;
+  position: relative;
+}
+
+.aside .nav-toggler span ::before {
+  content: '';
+  height: 2px;
+  width: 18px;
+  position: absolute;
+  top: -6px;
+  left: 0;
+  background: #ec1839;
+}
+
+.aside .nav-toggler span ::after {
+  content: '';
+  height: 2px;
+  width: 18px;
+  position: absolute;
+  top: 6px;
+  left: 0;
+  background: #ec1839;
+}
+
+.aside nav {
+  margin-top: 50px;
+}
+
+.aside nav ul {
+  list-style: none;
+}
+
+.aside nav ul li {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.aside nav ul li a {
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  border-bottom: 1px solid #c8dfec;
+  color: #302e4d;
+  padding: 5px 15px;
+}
+
+.aside nav ul li a i {
+  margin-right: 15px;
+}
+
+.aside nav ul li a .active {
+  color: #ec1839;
+}
+
+.main-content {
+  padding-left: 270px;
+}
+
+.main-content .home {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #302e4d;
+}
+
+.main-content .home .container {
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+}
+
+.main-content .home .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  position: relative;
+}
+
+.main-content .home .container .row .pad-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.main-content .home .container .row .home-info {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+  max-width: 60%;
+}
+
+.main-content .home .container .row .home-info .hi {
+  font-size: 28px;
+  margin: 15px 0;
+}
+
+.main-content .home .container .row .home-info .hi span {
+  font-family: "Clicker Script" cursive;
+  font-size: 30px;
+  font-weight: 700;
+  color: #ec1839;
+}
+
+.main-content .home .container .row .home-info .my-profession {
+  font-size: 30px;
+  margin: 15px 0;
+}
+
+.main-content .home .container .row .home-info .my-profession .typing {
+  color: #ec1839;
+}
+
+.main-content .home .container .row .home-info p {
+  margin-bottom: 70px;
+  font-size: 20px;
+  color: #302e4d;
+}
+
+.main-content .home .container .row .home-info .btn {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 35px;
+  background: #ec1839;
+  border-radius: 40px;
+  color: white;
+  display: inline-block;
+  white-space: nowrap;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.main-content .home .container .row .home-info .btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.main-content .home .container .row .home-img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  max-width: 40%;
+  text-align: center;
+  position: relative;
+}
+
+.main-content .home .container .row .home-img img {
+  height: 300px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.main-content .home .container .row .home-img::after {
+  content: '';
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  right: 20px;
+  bottom: -40px;
+  border-bottom: 10px solid #ec1839;
+  border-right: 10px solid #ec1839;
+}
+
+.main-content .home .container .row .home-img::before {
+  content: '';
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: -20px;
+  top: -40px;
+  border-top: 10px solid #ec1839;
+  border-left: 10px solid #ec1839;
+}
+/*# sourceMappingURL=style.css.map */
