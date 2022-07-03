@@ -5,7 +5,7 @@ $bg-black-900: #f2f2fc;
 $bg-black-100: #fdf9ff;
 $bg-black-50: #c8dfec;
 $text-black-900: #302e4d;
-// $bg-text-700: ;
+$bg-text-700: #504e70;
 $text-black-200: #504e70;
 $font-family1: Poppins 'san serif';
 $font-family2: 'Clicker Script' cursive;
@@ -36,16 +36,16 @@ body {
   display: block;
   padding: 0 30px;
   opacity: 1;
+
+  .container {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
 }
 
-.section .container {
-  padding-top: 60px;
-  padding-bottom: 70px;
+.hidden {
+  display: none !important;
 }
-
-// .hidden {
-//   display: none !important;
-// }
 
 .aside {
   width: 270px;
@@ -155,7 +155,7 @@ body {
   nav {
     margin-top: 50px;
 
-    ul {
+    .list {
       list-style: none;
 
       li {
@@ -180,9 +180,9 @@ body {
         }
 
       }
-    }
-    
-    
+
+    }    
+  
   }
 }
 
@@ -359,7 +359,21 @@ body {
           line-height: 25px;
           color: $bg-text-700;
         }
+
       }
+      
+      .personal-info {
+        flex: 0 0 60%;
+        max-width: 60%;
+        background-color: red;
+      }
+
+      .skills {
+        flex: 0 0 40%;
+        max-width: 40%;
+        background-color: green;
+      }
+
     }
   }
 }
