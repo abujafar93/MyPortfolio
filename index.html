@@ -9,6 +9,11 @@
   <script src="https://kit.fontawesome.com/5dcc6d6cb9.js" crossorigin="anonymous"></script>
   <script defer src="app.js"></script>
   <title>Personal Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" class="alternate-style" title="$skin-color" disabled>
+  <link rel="stylesheet" href="style.css" class="alternate-style" title="$color2" disabled>  
+  <link rel="stylesheet" href="style.css" class="alternate-style" title="$color3" disabled>
+  <link rel="stylesheet" href="style.css" class="alternate-style" title="$color4" disabled>
 </head>
 
 <body>
@@ -279,11 +284,13 @@
       <!-- SERVICES SECTION -->
       <section class="services section">
         <div class="container">
+
           <div class="row">
             <div class="section-title pad-15">
               <h2>Services</h2>
             </div>
           </div>
+
           <div class="row">
 
             <div class="service-item pad-15">
@@ -513,6 +520,24 @@
 
     </div>
 
+  </div>
+
+  <!-- STYLE SWITCHER -->
+  <div class="style-switcher">
+    <div class="style-switcher-toggler s-icon">
+      <i class="fas fa-cog fa-spin"></i>
+    </div>
+    <div class="day-night s-icon">
+      <i class="fas fa-moon"></i>
+    </div>
+    <h4>Theme Colors</h4>
+    <div class="colors">
+      <span class="color1" onclick="setActiveStyle('$skin-color')"></span>
+      <span class="color2" onclick="setActiveStyle('$color2')"></span>
+      <span class="color3" onclick="setActiveStyle('$color3')"></span>
+      <span class="color4" onclick="setActiveStyle('$color4')"></span>
+      <span class="color5" onclick="setActiveStyle('$color5')"></span>
+    </div>
   </div>
 </body>
 </html>
