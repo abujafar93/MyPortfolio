@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 
+
 $bg-black-900: #f2f2fc;
 $bg-black-100: #fdf9ff;
 $bg-black-50: #c8dfec;
@@ -9,8 +10,8 @@ $text-black-700: #504e70;
 $text-black-200: #504e70;
 $font-family1: 'Poppins', sans-serif;
 $font-family2: 'Clicker Script', cursive;
-$skin-color:#ec1839;
 $shadow-dark: 0 0 20px rgba(48, 46, 77, 0.15);
+$skin-color:#ec1839;
 $color2: #fa5b0f;
 $color3: #37b182;
 $color4: #1854b4;
@@ -83,7 +84,7 @@ $color5: #f021b2;
   }
 
   .color1 {
-    background: $skin-color;
+    background: var(--skin-color);
   }
 
   .color2 {
@@ -142,6 +143,14 @@ body {
   font-family: $font-family1;
 }
 
+body.dark {
+  $bg-black-900: #151515;
+  $bg-black-100: #222222;
+  $bg-black-50: #393939;
+  $text-black-900: #ffffff;
+  $text-black-700: #e9e9e9;
+}
+
 :before, :after  {
   box-sizing: border-box;
 }
@@ -167,7 +176,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   padding: 12px 35px;
-  background: $skin-color;
+  background: var(--skin-color);
   border-radius: 40px;
   color: white;
   display: inline-block;
@@ -196,7 +205,7 @@ body {
     content: '';
     height: 4px;
     width: 50px;
-    background-color: $skin-color;
+    background-color: var(--skin-color);
     position: absolute;
     top: 100%;
     left: 0;
@@ -206,7 +215,7 @@ body {
     content: '';
     height: 4px;
     width: 25px;
-    background-color: $skin-color;
+    background-color: var(--skin-color);
     position: absolute;
     top: 100%;
     left: 0;
@@ -757,7 +766,6 @@ body {
         flex: 0 0 33.33%;
         max-width: 33.33%;
         margin-bottom: 30px;
-        // box-shadow: $shadow-dark;
 
 
         .portfolio-item-inner {
@@ -936,4 +944,9 @@ body {
       max-width: 100%;
     }
   }
+}
+
+
+.switchColor2 {
+  --skin-color: blue;
 }

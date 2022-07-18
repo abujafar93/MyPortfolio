@@ -71,7 +71,7 @@
 }
 
 .style-switcher .color1 {
-  background: #ec1839;
+  background: var(--skin-color);
 }
 
 .style-switcher .color2 {
@@ -132,7 +132,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   padding: 12px 35px;
-  background: #ec1839;
+  background: var(--skin-color);
   border-radius: 40px;
   color: white;
   display: inline-block;
@@ -166,7 +166,7 @@ body {
   content: '';
   height: 4px;
   width: 50px;
-  background-color: #ec1839;
+  background-color: var(--skin-color);
   position: absolute;
   top: 100%;
   left: 0;
@@ -176,7 +176,7 @@ body {
   content: '';
   height: 4px;
   width: 25px;
-  background-color: #ec1839;
+  background-color: var(--skin-color);
   position: absolute;
   top: 100%;
   left: 0;
@@ -894,5 +894,9 @@ body {
             flex: 0 0 100%;
     max-width: 100%;
   }
+}
+
+.switchColor2 {
+  --skin-color: blue;
 }
 /*# sourceMappingURL=style.css.map */
