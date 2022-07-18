@@ -71,7 +71,7 @@
 }
 
 .style-switcher .color1 {
-  background: var(--skin-color);
+  background: #ec1839;
 }
 
 .style-switcher .color2 {
@@ -132,7 +132,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   padding: 12px 35px;
-  background: var(--skin-color);
+  background: #ec1839;
   border-radius: 40px;
   color: white;
   display: inline-block;
@@ -176,7 +176,7 @@ body {
   content: '';
   height: 4px;
   width: 25px;
-  background-color: var(--skin-color);
+  background-color: #ec1839;
   position: absolute;
   top: 100%;
   left: 0;
