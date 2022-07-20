@@ -11,11 +11,17 @@ $text-black-200: #504e70;
 $font-family1: 'Poppins', sans-serif;
 $font-family2: 'Clicker Script', cursive;
 $shadow-dark: 0 0 20px rgba(48, 46, 77, 0.15);
-$skin-color:#ec1839;
-$color2: #fa5b0f;
-$color3: #37b182;
-$color4: #1854b4;
-$color5: #f021b2;
+$skin-color:#f021b2;
+
+
+body.dark {
+  $bg-black-900: #151515;
+  $bg-black-100: #222222;
+  $bg-black-50: #393939;
+  $text-black-900: #ffffff;
+  $text-black-700: #e9e9e9;
+}
+
 
 
 
@@ -58,56 +64,9 @@ $color5: #f021b2;
 
   .day-night {
     top: 55px;
-
   }
 
-  h4 {
-    margin: 0 0 10px;
-    color: $text-black-700;
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: capitalize;
   }
-
-  .colors {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-
-    span {
-      display: inline-block;
-      height: 30px;
-      width: 30px;
-      border-radius: 50%;
-    }
-  }
-
-  .color1 {
-    background: $skin-color;
-  }
-
-  .color2 {
-    background: $color2;
-  }
-
-  .color3 {
-    background: $color3;
-  }
-
-  .color4 {
-    background: $color4;
-  }
-
-  .color5 {
-    background: $color5;
-  }
-}
-
-.style-switcher.open {
-  transform: translateX(-25px);
-}
-
 
 
 // GENERAL STYLING
@@ -125,13 +84,6 @@ body {
   font-family: $font-family1;
 }
 
-body.dark {
-  $bg-black-900: #151515;
-  $bg-black-100: #222222;
-  $bg-black-50: #393939;
-  $text-black-900: #ffffff;
-  $text-black-700: #e9e9e9;
-}
 
 :before, :after  {
   box-sizing: border-box;
